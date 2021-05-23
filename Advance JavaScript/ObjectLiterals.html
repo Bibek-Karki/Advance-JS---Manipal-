@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Creating an Object Instance as a Literals</h1>
+</head>
+<body>
+    <script>
+        var employee={id:102, name:"Bibek", salary:40000};
+
+        document.write("ID : "+ employee.id);
+        document.write("<br>Name : " + employee.name);
+        document.write("<br>Salary : " + employee.salary);
+
+        //document.write("<br>Grade : " + employee.grade);
+
+        employee.grade = "Engineer";
+        document.write("<br>Grade : " + employee.grade);
+    </script>
+</body>
+</html>

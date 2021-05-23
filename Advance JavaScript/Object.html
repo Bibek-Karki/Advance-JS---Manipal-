@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Working with Arrays in JavaScript</h1>
+    <h2>3 - ways to construct Array in JavaScript</h2>
+</head>
+<body>
+    <h3>Using Array Literals</h3>
+    <script>
+        var emp = ["Swetha" , "Vijj" , "Radha"];
+        for (i=0; i<emp.length; i++){
+            document.write(emp[i] + "<br/>");
+        }
+    </script>
+    <h3>Using the new operator to create an instance of Array</h3>
+    <script>
+        var i;
+        var emp = new Array();
+        emp[0] = "Akash";
+        emp[1] = "Varun";
+        emp[2] = "James";
+        for(i=0; i<emp.length; i++){
+            document.write(emp[i] + "<br/>");
+        }
+    </script>
+
+    <h3>Using an Array constructor</h3>
+    <script>
+        var emp = new Array("Jay" , "Vijay" , "Smith");
+        for(i=0; i<emp.length; i++){
+            document.write(emp[i] + "<br/>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Working with Strings in JavaScript</h1>
+</head>
+<body>
+    <script>
+        var t1 = "JavaScript";
+        document.write("The Original String is : <b>" + t1 + '</b> </br/> <br/>');
+
+        document.write("The Length of the string is : <b>" + t1.length + '</b> <br/> <br/>');
+
+        //Retrive the third character from the string.
+        document.write("The 4th character from the string is : <b>" + t1.charAt(3) + '</b> <br/> <br/>');
+
+        //Example of string concatenation.
+        document.write("Concatenation 'World' to the string gives : <b>" + t1.concat(" World!!") + '</b> <br/> <br/>');
+
+        //Example of the finding a position of a substring in the original string.
+        document.write("The position of the word 'Script' in the word 'JavaScript' is : <b>" + t1.indexOf("Script") + '</b> <br/> <br/>');
+
+        //Example of finding the last position of a character in the original string.
+        document.write("The position of the last occurence of the character 'a' in the word 'JavaScript' is : <b>" + t1.lastIndexOf("a") + '</b> <br/> <br/>');
+
+        //Example of converting the string to lower case.
+        document.write("The string 'JavaScript' after converting to lower case is : <b>" + t1.toLowerCase(),'</b> <br/> <br/>');
+
+        //Example of converting the string to upper case.
+        document.write("The string 'JavaScript' after converting to lower case is : <b>" + t1.toUpperCase(),'</b> <br/> <br/>');
+
+        //Example of slicing a few characters out of the string
+        document.write("The substring after slicing out characters 5-9 from the word 'JavaScript' : <b>" + t1.slice(4,9),'</b> <br/> <br/>');
+
+        //Example of trimming leading and trailing spaces from a string
+        var t2 = "  JavaScript  ";
+        document.write("The string after trimming spaces from the word '    JavaScript  ' : <b>" + t2.trim(),'</b> <br/> <br/>');
+        
+    </script>
+</body>
+</html>

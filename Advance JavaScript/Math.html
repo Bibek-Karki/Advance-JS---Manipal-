@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>Working with the Math object in javascript</h1>
+</head>
+<body>
+    <script>
+        //Get the value of PI
+        var PI = Math.PI;
+        document.write("The value of PI computed using <b> Math.PI</b> : " + PI +'</b> <br/> <br/>');
+
+        //Using the max function to get the max value from the list of items 
+        var maxVal = Math.max(0, -25, 130, 25, -112, 525);
+        document.write("The max value from the set is : " + maxVal + '<br/> <br/>');
+
+        //Using the min function to get hte value from the list of items
+        var minVal = Math.min(0, -25, 130, 25, -112, 525);
+        document.write("The max value from the set is : " + minVal + '<br/> <br/>');
+
+        //Trigonometry : Example of getting sine and cosine of a few angles
+        var sin90 = Math.sin(90 * Math.PI / 180);
+        var sin45 = Math.sin(45 * Math.PI / 180);
+        document.write("The Sin value of 90 degrees computed using <b>Math.sin</b> is : <b>" + sin90 + '</b> <br/> <br/>');
+        document.write("The Sin value of 45 degrees computed using <b>Math.sin</b> is : <b>" + sin45 + '</b> <br/> <br/>');
+
+        var cos0 = Math.cos(90 * Math.PI / 180);
+        var cos45 = Math.cos(45 * Math.PI / 180);
+        document.write("The Cos value of 90 degrees computed using <b>Math.sin</b> is : <b>" + cos0 + '</b> <br/> <br/>');
+        document.write("The Cos value of 45 degrees computed using <b>Math.sin</b> is : <b>" + cos45 + '</b> <br/> <br/>');
+
+        //Example of converting from Fahrenheit to Celsius and returning a rounded result 
+        var far = 98.6;
+        var cel = Math.round((far-32) * 5/9);
+        document.write("The rounded Celsius value of the 98.6 deg Fahrenheit is : <b>" + cel + '</b> <br/> <br/>');
+    </script>
+</body>
+</html>

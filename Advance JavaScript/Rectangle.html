@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Rectangle.js" defer></script>
+    <h1>Compute Area of Rectangle</h1>
+</head>
+<body>
+    <form>
+        <h2>Enter the Dimension of the Rectangle</h2>
+        Length:<br>
+        <input type="number" name="length">
+        <br><br>
+        Width: <br>
+        <input type="number" name="width">
+        <br><br>
+        <button type="button" name="Compute" onclick="Area.value=computeArea(length.value,width.value)">Compute Area</button>
+        <br><br>
+        <h3>
+            Area of Rectangle: 
+            <output name="Area"></output>
+        </h3>
+        <br>
+    </form>
+</body>
+</html>
